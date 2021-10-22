@@ -1,4 +1,4 @@
-# Projeto Sistema de Agendamento Odontológico
+# Sistema de Agendamento Odontológico
 
 Projeto exemplo para a Disciplina DCT1106 - Programação Semestre 2021.2
 
