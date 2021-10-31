@@ -27,6 +27,11 @@ void telaCadastrarDentista(void);
 void telaPesquisarDentista(void);
 void telaAlterarDentista(void);
 void telaDeletarDentista(void);
+void telaMenuConsulta(void);
+void telaCadastrarConsulta(void);
+void telaPesquisarConsulta(void);
+void telaAlterarConsulta(void);
+void telaDeletarConsulta(void);
 
 /////
 // Programa Principal
@@ -44,6 +49,11 @@ int main(void) {
     telaPesquisarDentista();
     telaAlterarDentista();
     telaDeletarDentista();
+    telaMenuConsulta();
+    telaCadastrarConsulta();
+    telaPesquisarConsulta();
+    telaAlterarConsulta();
+    telaDeletarConsulta();
     return 0;
 }
 
@@ -92,7 +102,7 @@ void telaPrincipal(void) {
     printf("///                                                                         ///\n");
     printf("///            1. Módulo Agendamento Pasciente                              ///\n");
     printf("///            2. Módulo Dentista                                           ///\n");
-    printf("///            3. Módulos Consulta                                          ///\n");
+    printf("///            3. Módulo Consulta                                           ///\n");
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -304,7 +314,7 @@ void telaMenuDentista(void) {
     printf("///                                                                       ///\n");
     printf("///           1.  Cadastrar um novo dentista.                             ///\n");                           
     printf("///           2.  Pesquisar informações do dentista.                      ///\n");                                    
-    printf("///           3.  Attualziar cadastro de um dentista.                     ///\n");                                       
+    printf("///           3.  Atualizar cadastro de um dentista.                      ///\n");                                      
     printf("///           4.  Excluir um dentista do sistema.                         ///\n");                                  
     printf("///           0.  Voltar para o menu anterior.                            ///\n");                               
     printf("///                                                                       ///\n");
@@ -424,6 +434,158 @@ void telaDeletarDentista(void) {
     printf("///                                                                       ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///           = = = = = = =   Deletar Dentista  = = = = = = =             ///\n");  
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaMenuConsulta(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = = Sistema de Agendamento Odontológico = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @gbrl08snts - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///            = = = = = = =   Menu Consulta   = = = = = = =              ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           1.  Agendar nova consulta.                                  ///\n");                      
+    printf("///           2.  Pesquisar informações da consulta.                      ///\n");                                    
+    printf("///           3.  Atualizar/Editar informações da consulta.               ///\n");                                             
+    printf("///           4.  Excluir uma consulta do sistema.                        ///\n");                                   
+    printf("///           0.  Voltar para o menu anterior.                            ///\n");                               
+    printf("///                                                                       ///\n");
+    printf("///           Escolha a opção desejada:                                   ///\n");                         
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaCadastrarConsulta(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = = Sistema de Agendamento Odontológico = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @gbrl08snts - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = = Cadastrar Consulta  = = = = = = =             ///\n"); 
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Data:                                                       ///\n");
+    printf("///           Horário:                                                    ///\n");    
+    printf("///           Pasciente (Matrícula - Apenas Números):                     ///\n");                                                                                                                                                                                   
+    printf("///           Dentista (Nome Completo):                                   ///\n");                         
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaPesquisarConsulta(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = = Sistema de Agendamento Odontológico = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @gbrl08snts - Out, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = =  Pesquisar Consulta = = = = = = =             ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe a Matrícula (Somente Números):                      ///\n");    
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaAlterarConsulta(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = = Sistema de Agendamento Odontológico = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @gbrl08snts - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = =   Alterar Consulta   = = = = = =              ///\n");  
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///                                                                       ///\n");
+    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///                                                                       ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaDeletarConsulta(void) {
+    system("clear||cls");
+    printf("\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          = = = = Sistema de Agendamento Odontológico = = = =          ///\n");
+    printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+    printf("///          ===================================================          ///\n");
+    printf("///                Developed by  @gbrl08snts - Jan, 2021                  ///\n");
+    printf("///                                                                       ///\n");
+    printf("/////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                       ///\n");
+    printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
+    printf("///           = = = = = = =   Deletar Consulta  = = = = = = =             ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
