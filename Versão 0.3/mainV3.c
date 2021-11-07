@@ -199,6 +199,12 @@ void telaMenuPasciente(void) {
 
 
 void telaCadastrarPasciente(void) {
+    char cpf[12];
+    char nome[51];
+    char email[51];
+    char nasc[11];
+    char celular[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -216,11 +222,21 @@ void telaCadastrarPasciente(void) {
     printf("///           = = = = = = = Cadastrar Pasciente = = = = = = =             ///\n"); 
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Matrícula (Somente Números):                                ///\n"); 
+    printf("///           CPF (Somente Números):                                      ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();
     printf("///           Nome Completo:                                              ///\n");
+    scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
+    getchar();
     printf("///           E-mail:                                                     ///\n");
+    scanf("%[A-Za-z@._]", email);
+    getchar();
     printf("///           Data de Nascimento (dd/mm/aaaa):                            ///\n");
-    printf("///           Celular (Somente Números):                                  ///\n"); 
+    scanf("%[0-9/]", nasc);
+    getchar();
+    printf("///           Celular (Somente Números):                                  ///\n");
+    scanf("%[0-9]", celular);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -232,6 +248,8 @@ void telaCadastrarPasciente(void) {
 
 
 void telaPesquisarPasciente(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -249,7 +267,9 @@ void telaPesquisarPasciente(void) {
     printf("///           = = = = = = = Pesquisar Pasciente = = = = = = =             ///\n"); 
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -261,6 +281,8 @@ void telaPesquisarPasciente(void) {
 
 
 void telaAlterarPasciente(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -278,7 +300,9 @@ void telaAlterarPasciente(void) {
     printf("///           = = = = = = =   Alterar Pasciente   = = = = = =             ///\n");   
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -290,6 +314,8 @@ void telaAlterarPasciente(void) {
 
 
 void telaDeletarPasciente(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -307,7 +333,9 @@ void telaDeletarPasciente(void) {
     printf("///           = = = = = = =  Deletar Pasciente  = = = = = = =             ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -319,6 +347,8 @@ void telaDeletarPasciente(void) {
 
 
 void telaMenuDentista(void) {
+    char op;
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -342,7 +372,9 @@ void telaMenuDentista(void) {
     printf("///           4.  Excluir um dentista do sistema.                         ///\n");                                  
     printf("///           0.  Voltar para o menu anterior.                            ///\n");                               
     printf("///                                                                       ///\n");
-    printf("///           Escolha a opção desejada:                                   ///\n");                         
+    printf("///           Escolha a opção desejada:                                   ///\n");
+    scanf("%c", &op);
+    getchar();                         
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -353,6 +385,12 @@ void telaMenuDentista(void) {
 
 
 void telaCadastrarDentista(void) {
+    char cpf[12];
+    char nome[51];
+    char email[51];
+    char nasc[11];
+    char celular[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -370,11 +408,21 @@ void telaCadastrarDentista(void) {
     printf("///           = = = = = = = Cadastrar Dentista  = = = = = = =             ///\n"); 
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Matrícula (Somente Números):                                ///\n");                        
-    printf("///           Nome Completo:                                              ///\n");           
-    printf("///           E-mail:                                                     ///\n");       
-    printf("///           Data de Nascimento (dd/mm/aaaa):                            ///\n");                            
-    printf("///           Celular (Somente Números):                                  ///\n");                                                                                    
+    printf("///           CPF (Somente Números):                                      ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();                        
+    printf("///           Nome Completo:                                              ///\n");
+    scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
+    getchar();           
+    printf("///           E-mail:                                                     ///\n");
+    scanf("%[A-Za-z@._]", email);
+    getchar();       
+    printf("///           Data de Nascimento (dd/mm/aaaa):                            ///\n");
+    scanf("%[0-9/]", nasc);
+    getchar();                            
+    printf("///           Celular (Somente Números):                                  ///\n");
+    scanf("%[0-9]", celular);
+    getchar();                                                                                    
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -385,6 +433,8 @@ void telaCadastrarDentista(void) {
 
 
 void telaPesquisarDentista(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -402,7 +452,9 @@ void telaPesquisarDentista(void) {
     printf("///           = = = = = = =  Pesquisar Dentista = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -414,6 +466,8 @@ void telaPesquisarDentista(void) {
 
 
 void telaAlterarDentista(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -431,7 +485,9 @@ void telaAlterarDentista(void) {
     printf("///           = = = = = = =   Alterar Dentista   = = = = = =              ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -443,6 +499,8 @@ void telaAlterarDentista(void) {
 
 
 void telaDeletarDentista(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -460,7 +518,9 @@ void telaDeletarDentista(void) {
     printf("///           = = = = = = =   Deletar Dentista  = = = = = = =             ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar(); 
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -472,6 +532,8 @@ void telaDeletarDentista(void) {
 
 
 void telaMenuConsulta(void) {
+    char op;
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -495,7 +557,9 @@ void telaMenuConsulta(void) {
     printf("///           4.  Excluir uma consulta do sistema.                        ///\n");                                   
     printf("///           0.  Voltar para o menu anterior.                            ///\n");                               
     printf("///                                                                       ///\n");
-    printf("///           Escolha a opção desejada:                                   ///\n");                         
+    printf("///           Escolha a opção desejada:                                   ///\n");
+    scanf("%c", &op);
+    getchar();                         
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -525,7 +589,7 @@ void telaCadastrarConsulta(void) {
     printf("///                                                                       ///\n");
     printf("///           Data:                                                       ///\n");
     printf("///           Horário:                                                    ///\n");    
-    printf("///           Pasciente (Matrícula - Apenas Números):                     ///\n");                                                                                                                                                                                   
+    printf("///           Pasciente (CPF - Apenas Números):                           ///\n");                                                                                                                                                                            
     printf("///           Dentista (Nome Completo):                                   ///\n");                         
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -554,7 +618,7 @@ void telaPesquisarConsulta(void) {
     printf("///           = = = = = = =  Pesquisar Consulta = = = = = = =             ///\n");
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n");    
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -583,7 +647,7 @@ void telaAlterarConsulta(void) {
     printf("///           = = = = = = =   Alterar Consulta   = = = = = =              ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -612,7 +676,7 @@ void telaDeletarConsulta(void) {
     printf("///           = = = = = = =   Deletar Consulta  = = = = = = =             ///\n");  
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
-    printf("///           Informe a Matrícula (Somente Números):                      ///\n"); 
+    printf("///           Informe o CPF (Somente Números):                            ///\n");
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
