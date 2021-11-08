@@ -570,6 +570,11 @@ void telaMenuConsulta(void) {
 
 
 void telaCadastrarConsulta(void) {
+    char data[9];
+    char hora[5];
+    char cpf[12];
+    char nome[51];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -588,9 +593,17 @@ void telaCadastrarConsulta(void) {
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Data:                                                       ///\n");
-    printf("///           Horário:                                                    ///\n");    
-    printf("///           Pasciente (CPF - Apenas Números):                           ///\n");                                                                                                                                                                            
-    printf("///           Dentista (Nome Completo):                                   ///\n");                         
+    scanf("%[0-9/]", data);
+    getchar();
+    printf("///           Horário:                                                    ///\n");
+    scanf("%[0-9;]", hora);
+    getchar();    
+    printf("///           Pasciente (CPF - Apenas Números):                           ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();                                                                                                                                                                             
+    printf("///           Dentista (Nome Completo):                                   ///\n");
+    scanf("%[A-ZÁÉÍÓÚÂÊÔÇÀÃÕ a-záéíóúâêôçàãõ]", nome);
+    getchar();                        
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -601,6 +614,8 @@ void telaCadastrarConsulta(void) {
 
 
 void telaPesquisarConsulta(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -619,6 +634,8 @@ void telaPesquisarConsulta(void) {
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -630,6 +647,8 @@ void telaPesquisarConsulta(void) {
 
 
 void telaAlterarConsulta(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -648,6 +667,8 @@ void telaAlterarConsulta(void) {
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -659,6 +680,8 @@ void telaAlterarConsulta(void) {
 
 
 void telaDeletarConsulta(void) {
+    char cpf[12];
+
     system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
@@ -677,6 +700,8 @@ void telaDeletarConsulta(void) {
     printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
     printf("///                                                                       ///\n");
     printf("///           Informe o CPF (Somente Números):                            ///\n");
+    scanf("%[0-9]", cpf);
+    getchar();
     printf("///                                                                       ///\n");
     printf("///                                                                       ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////\n");
